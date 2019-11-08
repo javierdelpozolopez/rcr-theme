@@ -21,7 +21,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -68,7 +69,7 @@ button{
 }
 
 label {
-    margin-top: 1.35em;
+    margin-top: 1.15em;
     margin-bottom: 5px;
 }
 
@@ -178,7 +179,7 @@ input[type=checkbox]:checked{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-top: 2em;
+    margin-top: 24px;
 }
  
   .js-form-type-checkbox{
@@ -216,4 +217,82 @@ input[type=checkbox]:checked{
 
 .gracias img {
     width: 100%;
+}
+
+#block-baseslegales {
+    display: none;
+}
+
+.spb-popup-main-wrapper{
+    position: absolute;
+    height: 50%;
+    overflow: inherit;
+}
+
+.block-baseslegales-modal{
+    background-color: rgba(0,0,0,.45);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-baseslegales-modal .spb_center{
+    border-radius: 8px;
+    padding: 1em;
+    color: black;
+    background-color: rgb(250,250,250);
+    border: none;
+}
+
+.spb-controls{
+    position: fixed;
+    right: 0;
+    left: 0;
+    text-align: center;
+    top: 15%;
+}
+
+.spb_close{
+    float: initial;
+    margin: 0;
+    padding: .3em .6em;
+    line-height: 3em;
+    color: #497C00;
+}
+.block-baseslegales-modal-close{
+    font-size: 35px;
+    border-radius: 50%;
+    border: 1px solid rgb(220,220,220);
+    box-shadow: 0px 1px 3px 2px rgba(0,0,0,.25);
+}
+
+.spb_center{
+    top: auto;
+    left: auto;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.content-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.link{
+    text-decoration: underline;
+    color: #89D2FF;
+    padding-left: -15px;
+}
+
+.fieldset{
+    padding: 0;
+}
+
+#edit-processed-text-03{
+    padding: 0;
 }
